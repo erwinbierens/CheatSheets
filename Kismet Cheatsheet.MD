@@ -6,10 +6,10 @@ Kismet works with Wi-Fi interfaces, Bluetooth interfaces, some SDR (software def
 
 [+] Commands
 
-# Turn Interface down
+## Turn Interface down
 ifconfig wlan0 down
 
-# Set monitor mode
+## Set monitor mode
 iwconfig wlan0 mode monitor
 
 # Set interface up
