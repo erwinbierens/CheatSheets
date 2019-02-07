@@ -14,3 +14,7 @@ We just provide minimum options to the snmpwalk. We will provide following optio
 IPADDRESS
 
 snmpwalk -v 2c -c public localhost
+
+[+] Write to txt file
+
+snmpwalk -v 2c -c public localhost >> output.txt
