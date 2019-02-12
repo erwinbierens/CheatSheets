@@ -11,7 +11,7 @@ Searching for RTP Packets within a specified range that DO NOT have the DSCP fie
 
 (udp.port >=16384 and udp.port <= 32767) and not(ip.dsfield.dscp==46 or ip.tos.precedence==5)
 
-[+] RTP other than G.711 or G.729 
+[+] RTP other than G.711 or G.729
 Searches for RTP types other than G.711 or G.729. Why would I need this? 
 If you are using Cisco NBAR to match packets in a class-map the “audio” and “video” keywords only match specific traffic. 
 You can define payload types to match as well. For instance, DTMF is usually payload type 101, T.38 is another dynamic payload type.
@@ -23,7 +23,7 @@ Searches for SIP Packets that are not sourced from UDP port 5060 or TCP port 506
 
 not (udp.srcport==5060 or tcp.srcport==5060) and sip
 
-[+] Not Destination port UDP/TCP 5060  
+[+] Not Destination port UDP/TCP 5060
 Searches for SIP packets that are not destined for UDP port 5060 or TCP port 5060.
 
 not (udp.dstport==5060 or tcp.dstport==5060) and sip
